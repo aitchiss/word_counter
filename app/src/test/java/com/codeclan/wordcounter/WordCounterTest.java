@@ -30,4 +30,22 @@ public class WordCounterTest {
         assertEquals(9, wordCounter.countWords(text));
     }
 
+    @Test
+    public void testCheckOccurences(){
+        String text = "test test test banana";
+        wordCounter.checkOccurences(text);
+        Integer returnedValue = wordCounter.returnOccurenceValue("test");
+        Integer expectedValue = 3;
+        assertEquals(expectedValue, returnedValue);
+    }
+
+
+    @Test
+    public void countOccurences(){
+        String text = "test test test banana";
+        String expected = "Individual word count: 'banana': 1, 'test': 3";
+        assertEquals(expected, wordCounter.countOccurences(text));
+
+    }
+
 }
