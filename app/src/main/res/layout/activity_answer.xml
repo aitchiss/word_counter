@@ -16,12 +16,33 @@
         android:layout_marginTop="100dp"
         android:textSize="30dp"
         />
-    
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/answer_breakdown_text"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:src="@drawable/ic_action_name"/>
+        android:src="@drawable/confirmation_icon"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_again"
+        android:onClick="onClickBackToMainScreen"
+        android:backgroundTint="@color/buttonColour"
+        android:textColor="@color/buttonTextColour"
+        android:text="start again"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"/>
     
 </LinearLayout>
