@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/iput_text"
+        android:id="@+id/input_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="enter your text here"
@@ -17,10 +17,13 @@
         android:layout_marginTop="100dp"/>
 
     <Button
+        android:id="@+id/word_count_button"
         android:text="word count"
         android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:onClick="onWordCountButtonClick"/>
+
 </LinearLayout>
